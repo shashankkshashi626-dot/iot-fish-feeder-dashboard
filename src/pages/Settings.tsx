@@ -145,7 +145,7 @@ export function SettingsPage() {
                 type="text"
                 value={settings.deviceName}
                 onChange={e => setSettings(prev => ({ ...prev, deviceName: e.target.value }))}
-                placeholder="AquaFeed-ESP32"
+                placeholder="AquaMate-ESP32"
                 className={`w-full px-4 py-3 rounded-xl text-sm outline-none border transition-all ${inputClass}`}
               />
             </div>

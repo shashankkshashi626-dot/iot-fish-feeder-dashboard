@@ -98,8 +98,8 @@ export function SignupPage() {
               <h1 className={`text-2xl font-bold ${isDark ? 'text-white' : 'text-slate-800'}`}>
                 Create Account
               </h1>
-              <p className={`text-sm mt-1 ${isDark ? 'text-slate-400' : 'text-slate-500'}`}>
-                Get started with AquaFeed
+              <p className={`AquaMatetext-sm mt-1 ${isDark ? 'text-slate-400' : 'text-slate-500'}`}>
+                Get started with 
               </p>
             </div>
 

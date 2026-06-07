@@ -40,7 +40,7 @@ const defaultStatus: DeviceStatus = {
   waterTemp: 25.5,
   wifiStatus: 'connected',
   servoStatus: 'idle',
-  deviceName: 'AquaFeed-ESP32',
+  deviceName: 'AquaMate-ESP32',
   signalStrength: 85,
 };
 

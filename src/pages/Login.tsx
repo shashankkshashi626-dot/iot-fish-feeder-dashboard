@@ -70,7 +70,7 @@ export function LoginPage() {
             Welcome back
           </h1>
           <p className={`text-sm mt-1 ${isDark ? 'text-slate-400' : 'text-slate-500'}`}>
-            Sign in to your AquaFeed dashboard
+            Sign in to your AquaMate dashboard
           </p>
         </div>
 

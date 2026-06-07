@@ -1,4 +1,4 @@
-// Types for the AquaFeed IoT Dashboard
+// Types for the AquaMateIoT Dashboard
 
 export interface User {
   id: string;

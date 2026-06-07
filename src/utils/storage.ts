@@ -1,12 +1,12 @@
 import { User, FeedingSchedule, FeedingHistory, DeviceSettings, AppNotification } from '../types';
 
 const STORAGE_KEYS = {
-  USERS: 'aquafeed_users',
-  CURRENT_USER: 'aquafeed_current_user',
-  SCHEDULES: 'aquafeed_schedules',
-  HISTORY: 'aquafeed_history',
-  SETTINGS: 'aquafeed_settings',
-  NOTIFICATIONS: 'aquafeed_notifications',
+  USERS: 'AquaMate_users',
+  CURRENT_USER: 'AquaMate_current_user',
+  SCHEDULES: 'AquaMate_schedules',
+  HISTORY: 'AquaMate_history',
+  SETTINGS: 'AquaMate_settings',
+  NOTIFICATIONS: 'AquaMate_notifications',
 };
 
 // ─── Users ───
@@ -93,7 +93,7 @@ export function addHistoryEntry(entry: FeedingHistory): void {
 export const DEFAULT_SETTINGS: DeviceSettings = {
   wifiSSID: 'AquariumNetwork',
   wifiPassword: '',
-  deviceName: 'AquaFeed-ESP32',
+  deviceName: 'AquaMate-ESP32',
   notifications: {
     lowFood: true,
     feedingComplete: true,
@@ -162,7 +162,7 @@ export function initDefaults(): void {
   }
   if (!getAppNotifications().length) {
     const notifications: AppNotification[] = [
-      { id: crypto.randomUUID(), type: 'info', title: 'System Ready', message: 'AquaFeed dashboard is online and ready.', timestamp: new Date().toISOString(), read: false },
+      { id: crypto.randomUUID(), type: 'info', title: 'System Ready', message: 'AquaMate dashboard is online and ready.', timestamp: new Date().toISOString(), read: false },
       { id: crypto.randomUUID(), type: 'warning', title: 'Low Food Level', message: 'Food container is at 35%. Consider refilling soon.', timestamp: new Date(Date.now() - 1800000).toISOString(), read: false },
     ];
     saveAppNotifications(notifications);
