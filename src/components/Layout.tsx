@@ -81,7 +81,7 @@ export function Layout({ children }: { children: ReactNode }) {
           </div>
           <div>
             <h1 className={`font-bold text-xl tracking-tight ${isDark ? 'text-white' : 'text-slate-800'}`}>
-              Aqua<span className="text-sky-500">Feed</span>
+              Aqua<span className="text-sky-500">mate</span>
             </h1>
             <p className={`text-[10px] tracking-widest uppercase ${isDark ? 'text-slate-500' : 'text-slate-400'}`}>Smart Feeder</p>
           </div>
